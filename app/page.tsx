@@ -6,7 +6,8 @@ import { supabase } from "@/lib/supabase";
 
 
 export default async function Home() {
-  
+  console.log("URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
+console.log("KEY:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.slice(0, 20));
    const result = await supabase
   .from("courses")
   .select("*");
