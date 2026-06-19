@@ -4,7 +4,7 @@ import Herocard from "@/components/Herocard";
 import Sidebar from "@/components/Sidebar";
 import { supabase } from "@/lib/supabase";
 
-
+// redeploy
 export default async function Home() {
   console.log("URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
 console.log("KEY:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.slice(0, 20));
