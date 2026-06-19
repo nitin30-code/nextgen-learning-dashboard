@@ -14,11 +14,13 @@ export default async function Home() {
 const courses = result.data;
 const error = result.error;
 
-  if (error) {
+console.log("Courses:", courses);
+console.log("Error:", error);
+if (error) {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <h1>Failed to load courses</h1>
-    </main>
+    <div>
+      <pre>{JSON.stringify(error, null, 2)}</pre>
+    </div>
   );
 }
 
