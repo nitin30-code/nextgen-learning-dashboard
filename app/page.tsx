@@ -4,6 +4,8 @@ import Herocard from "@/components/Herocard";
 import Sidebar from "@/components/Sidebar";
 import { supabase } from "@/lib/supabase";
 
+import "../assets/main-style.css";
+
 // redeploy
 export default async function Home() {
   console.log("URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);

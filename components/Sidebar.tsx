@@ -2,7 +2,7 @@ import { LayoutDashboard, BookOpen, Activity, Settings } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 min-h-screen bg-zinc-900 border-r border-zinc-800">
+    <aside className="hidden sm:block w-40 md:w-64 min-h-screen bg-zinc-900 border-r border-zinc-800">
       <div className="p-6 text-xl font-bold">
         LearnDash
       </div>
